@@ -5,6 +5,13 @@
 }
 
 body {
+    background-color: #fff;
+}
+
+body > div {
+    width: 100%;
+    min-height: 100vh;
+
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: auto 1fr auto;
@@ -12,14 +19,12 @@ body {
         "header header"
         "nav section"
         "footer footer";
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== Header ===== */
 header {
     grid-area: header;
-    color: white;
     background-color: grey;
+    color: white;
     padding: 10px;
     margin: 5px;
 }
@@ -34,7 +39,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 nav ul li {
@@ -64,7 +69,6 @@ section {
 
 section h2 {
     margin-bottom: 15px;
-    font-weight: bold;
 }
 
 section p {
@@ -73,10 +77,3 @@ section p {
 }
 
 footer {
-    grid-area: footer;
-    background-color: grey;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-}
-
